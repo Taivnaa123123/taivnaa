@@ -19,7 +19,7 @@
       margin: auto;
       background-color: #fff;
     }
-    #inputSection, #outputText {
+    #inputSection, #outputText, #extraText {
       display: none;
       margin-top: 15px;
     }
@@ -43,6 +43,10 @@
     }
     #outputText {
       color: #0077cc;
+      font-weight: bold;
+    }
+    #extraText {
+      color: #ff4500;
       font-weight: bold;
     }
   </style>
@@ -78,11 +82,11 @@
       const extra = document.getElementById("extraText");
 
       if (input === "амлаж байна") {
-        output.style.display = "block";
-        extra.style.display = "block";
+        output.style.display = "block"; // Show the first text
+        extra.style.display = "block";  // Show the second text
       } else {
-        output.style.display = "none";
-        extra.style.display = "none";
+        output.style.display = "none";  // Hide the first text
+        extra.style.display = "none";   // Hide the second text
       }
     }
   </script>
