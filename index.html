@@ -19,6 +19,22 @@
             margin: auto;
             background-color: #fff;
         }
+        #hiddenText {
+            display: none;
+            margin-top: 15px;
+            color: #0077cc;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
     </style>
 </head>
 <body>
@@ -26,6 +42,16 @@
         <h1>こんばんは。Hi nomio! 👋</h1>
         <p>Шийтгэлийг чинь бодоод олчихлоо.</p>
         <p>You can add more text, images, or anything you like here!</p>
+
+        <button onclick="showText()">Touch this</button>
+        <p id="hiddenText">🎉 Surprise! You touched the button. Good choice!</p>
     </div>
+
+    <script>
+        function showText() {
+            document.getElementById("hiddenText").style.display = "block";
+        }
+    </script>
 </body>
 </html>
+
