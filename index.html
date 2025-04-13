@@ -63,7 +63,7 @@
     </div>
 
     <p id="outputText">Гараад ирээ хө!</p>
-    <p>Гэнэтийн болохоор яаралгүй тааваараа гараад ирээрэй. 😄</p>
+    <p id="extraText">Гэнэтийн болохоор яаралгүй тааваараа гараад ирээрэй. 😄!</p>
     
   </div>
 
@@ -75,11 +75,14 @@
     function displayText() {
       const input = document.getElementById("userInput").value.trim().toLowerCase();
       const output = document.getElementById("outputText");
+      const extra = document.getElementById("extraText");
 
       if (input === "амлаж байна") {
         output.style.display = "block";
+        extra.style.display = "block";
       } else {
         output.style.display = "none";
+        extra.style.display = "none";
       }
     }
   </script>
